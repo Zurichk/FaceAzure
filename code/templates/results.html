@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+
+    <h2>RESULTADOS</h2>
+    {% if imagen %}
+    <h2>Busqueda de Caras: </h2>
+    <div class="container">
+        <!--<p> <img src=response width="300" height="150"> </p>-->
+        <p>Nombre de la imagen: {{nombre}}</p>
+        <p>Número de caras encontradas: {{numerodecaras}}</p>
+
+        <!--Mostrar caras-->
+        <ul>
+            {% for persona in personas %}
+            <li>{{persona}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    <h2>Analisis de la Imagen: </h2>
+    <div class="container">
+        <!--Lista desplegable-->
+        <ul>
+            {% for a in analizado %}
+            <li>{{a}}</li>
+            {% endfor %}
+            {% for e in tags %}
+            <li>{{e}}</li>
+            {% endfor %}
+            <!--{% for e in etiquetas %}
+            <li>{{e}}</li>
+            {% endfor %}e-->
+            <!--<li>{{textoencontrado}}</li>-->
+            <li>Texto: </li>
+            <ul>
+                {% for texto in textoencontrado %}
+                <li>{{texto}}</li>
+                {% endfor %}
+            </ul>
+            <li> Color de énfasis de la imagen (accentColor): <span style="color: #000;"></span>{{accentcolor}} </li>
+
+        </ul>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="container-fluid align-right mt-5 mb-5">
+        <a class="btn btn-secondary" href="/">Inicio</a>
+    </div>
+</div>
+{% endblock %}-->

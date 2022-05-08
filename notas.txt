@@ -1,0 +1,39 @@
+Creamos el entorno:
+py -m venv AzureDetect
+
+Activamos el entorno:
+.\AzureDetect\Scripts\activate
+
+instalamos:
+pip install flask
+
+set FLASK_APP=app
+set FLASK_ENV=development
+
+pip install --upgrade azure-cognitiveservices-vision-face
+pip install azure-cognitiveservices-vision-computervision
+python -m pip install Pillow
+
+desde la carpeta donde esta el codigo
+flask run
+
+
+Imagenes de pruebas:
+
+https://images.ecestaticos.com/PJP0ljYk4EXHhNfX2xPl2veEb8M=/0x19:619x367/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F305%2F365%2F960%2F30536596002888fe41f8a1a574a16a68.jpg
+
+https://static4.abc.es/media/ciencia/2018/02/26/carastriangulos-kGFG--620x349@abc.jpg
+
+https://e7.pngegg.com/pngimages/269/897/png-clipart-family-cosmetic-dentistry-family-smile-happy-family-child-photography.png
+
+https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+
+https://tpc.googlesyndication.com/simgad/14044598367269066583
+
+https://github.com/Azure-Samples/cognitive-services-python-sdk-samples/raw/master/samples/vision/images/make_things_happen.jpg
+
+
+
+
+
+
